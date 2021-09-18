@@ -6,8 +6,8 @@ rvm:
 addons:
   postgresql: "13.4"
 
-# services:
-#   - postgresql
+services:
+  - postgresql
 
 install:
   - bundle install
