@@ -21,7 +21,8 @@ before_script:
   # - psql -c 'create database ;' -U postgres
 
 script:
-  - bundle install
+  - bundle exec rake
+  # - bundle install
   # - bundle exec rake db:create
   # - bundle exec rake db:migrate
-  - bundle exec rspec
+  # - bundle exec rspec
