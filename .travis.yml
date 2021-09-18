@@ -4,17 +4,29 @@ rvm:
 - 2.6.6
 
 addons:
-  postgresql: "9.6"
+  postgresql: '13'
+  apt:
+    packages:
+      - postgresql-13
+env:
+  global:
+    - PGPORT=5433
 
 services:
   - postgresql
 
+# cache:
+#   bundler: true
+#   directories:
+#     - node_modules
+#   yarn: true
+
 install:
   - bundle install
-  - nvm install node
-  - node -v
-  - npm i -g yarn
-  - yarn
+  # - nvm install node
+  # - node -v
+  # - npm i -g yarn
+  # - yarn
 
 before_script:
   - bundle exec rake db:create db:migrate RAILS_ENV=test
