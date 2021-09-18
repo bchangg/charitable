@@ -11,18 +11,13 @@ services:
 
 install:
   - bundle install
-  # - nvm install node
-  # - node -v
-  # - npm i -g yarn
-  # - yarn
+  - nvm install node
+  - node -v
+  - npm i -g yarn
+  - yarn
 
 before_script:
   - bundle exec rake db:create db:migrate RAILS_ENV=test
-  # - psql -c 'create database ;' -U postgres
 
 script:
-  - bundle exec rake
-  # - bundle install
-  # - bundle exec rake db:create
-  # - bundle exec rake db:migrate
-  # - bundle exec rspec
+  - bundle exec rspec
