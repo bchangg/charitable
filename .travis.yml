@@ -1,9 +1,17 @@
 language: ruby
+
 rvm:
 - 2.6.6
-- 1.9.3
-- jruby-19mode
-- rbx-2
+
+addons:
+  - postgresql: "13.4"
+
+services:
+  - postgresql
+
+before_script:
+  - bundle exec rake db:create db:migrate RAILS_ENV=test
+  # - psql -c 'create database ;' -U postgres
 
 script:
   - bundle install
