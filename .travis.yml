@@ -1,0 +1,26 @@
+language: ruby
+
+rvm:
+- 2.6.6
+
+addons:
+  postgresql: "9.4"
+
+cache:
+  bundler: true
+  directories:
+    - node_modules
+  yarn: true
+
+install:
+  - bundle install
+  - nvm install 12.18.3
+  - node -v
+  - npm i -g yarn
+  - yarn
+
+before_script:
+  - bundle exec rake db:create db:migrate RAILS_ENV=test
+
+script:
+  - bundle exec rspec

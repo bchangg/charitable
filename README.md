@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/bchangg/rails_blog.svg?branch=main)](https://app.travis-ci.com/bchangg/rails_blog)
+
 # README
 
 This README would normally document whatever steps are necessary to get the
