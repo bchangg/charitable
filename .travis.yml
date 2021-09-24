@@ -12,6 +12,10 @@ cache:
     - node_modules
   yarn: true
 
+branches:
+  only:
+    - main
+
 install:
   - bundle install
   - nvm install 12.18.3
