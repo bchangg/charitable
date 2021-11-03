@@ -15,12 +15,12 @@ jobs:
         with:
           bundler-cache: true
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.16.2
-          cache: 'npm'
-        run: npm install
+      # - name: Setup Node
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     node-version: 12.16.2
+      #     cache: 'npm'
+      #   run: npm install
 
       # - name: Run RSpec Tests
       #   run: rspec spec
