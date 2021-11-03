@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 12.16.2
         #   cache: 'npm'
-        # run: npm install
+        run: npm install
 
       # - name: Run RSpec Tests
       #   run: rspec spec
