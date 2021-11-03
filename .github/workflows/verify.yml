@@ -21,11 +21,14 @@ jobs:
 
       - name: Install Gems
         run: bundle install
-          
+
       - name: Run RSpec Tests
         run: bundle exec rspec spec
 
-  # tests:
-  #   runs-on: ubuntu-latest
+  upload-reports:
+    runs-on: ubuntu-latest
 
-  #   steps:
+    steps:
+      - name: Upload Coverage Report to Codecov
+        uses: codecov/codecov-action@v2
+
