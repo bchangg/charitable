@@ -9,16 +9,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Ruby and install gems
+      - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-        run: bundle install
 
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
           node-version: 12.16.2
+
+      - name: Install Gems
+        run: bundle install
           
       - name: Run RSpec Tests
         run: rspec spec
