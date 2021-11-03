@@ -24,4 +24,4 @@ jobs:
 
     steps:
       - name: Run RSpec Tests
-        run: rspec spec
+        run: bundle exec rspec spec
