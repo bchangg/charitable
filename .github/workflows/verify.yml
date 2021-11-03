@@ -22,5 +22,5 @@ jobs:
           cache: 'npm'
         run: npm install
 
-      - name: Run RSpec Tests
-        run: rspec spec
+      # - name: Run RSpec Tests
+      #   run: rspec spec
