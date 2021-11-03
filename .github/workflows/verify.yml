@@ -23,8 +23,8 @@ jobs:
         with:
           node-version: 12.16.2
 
-      - name: Install Gems
-        run: bundle install
+      # - name: Install Gems
+      #   run: bundle install
 
       - name: Run RSpec Tests
         run: bundle exec rspec spec
