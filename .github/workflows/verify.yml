@@ -2,7 +2,7 @@ name: Verify
 on: [push, pull_request]
 
 jobs:
-  setup-environment:
+  run-tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,11 +21,6 @@ jobs:
 
       - name: Install Gems
         run: bundle install
-
-  run-tests:
-    runs-on: ubuntu-latest
-
-    steps:
 
       - name: Run RSpec Tests
         run: bundle exec rspec spec
