@@ -31,12 +31,6 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # Travis CI
 gem 'travis'
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails', '~> 5.0.0'
-end
-
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
@@ -46,9 +40,21 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 5.0.0'
+  gem 'factory_bot'
+end
+
 group :test do
   gem 'simplecov', require: false
   gem 'codecov', require: false
+  gem 'faker', "~> 1.1.2"
+  gem 'capybara', "~> 2.1.0"
+  gem 'database_cleaner', "~> 1.0.1"
+  gem 'launchy', "~> 2.3.0"
+  gem 'selenium-webdriver', "~> 2.35.1"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
