@@ -41,7 +41,6 @@ jobs:
           PGHOST: localhost
           PGUSER: postgres
           PGPASSWORD: postgres
-          # DATABASE_URL: postgres://postgres:postgres@localhost:5432/coaching_rails_blog_test
         run: |
           bundle exec rails db:setup
 
