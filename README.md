@@ -1,6 +1,6 @@
 [![Build Status](https://app.travis-ci.com/bchangg/rails_blog.svg?branch=main)](https://app.travis-ci.com/bchangg/rails_blog)
 
-[![codecov](https://codecov.io/gh/bchangg/rails_blog/branch/main/graph/badge.svg?token=B49FSUFE4C)](https://codecov.io/gh/bchangg/rails_blog)
+![RSpec](https://github.com/bchangg/rails_blog/actions/workflows/rails_ci.yml/badge.svg)
 
 # README
 
