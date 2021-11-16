@@ -1,4 +1,8 @@
-![Build Status ](https://github.com/bchangg/rails_blog/actions/workflows/rails_ci.yml/badge.svg)
+![Build Status](https://github.com/bchangg/rails_blog/actions/workflows/rails_ci.yml/badge.svg)
+
+[![codecov](https://codecov.io/gh/bchangg/charitable/branch/main/graph/badge.svg?token=B49FSUFE4C)](https://codecov.io/gh/bchangg/charitable)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/f671edeea6e827fce272/maintainability)](https://codeclimate.com/github/bchangg/charitable/maintainability)
 
 # README
 
