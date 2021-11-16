@@ -28,8 +28,7 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-# Travis CI
-gem 'travis'
+gem 'simplecov-json', require: false
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
@@ -44,13 +43,13 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 5.0.0'
-  gem 'factory_bot'
+  gem 'factory_bot_rails', '~> 6.2.0'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 end
 
 group :test do
   gem 'simplecov', require: false
   gem 'codecov', require: false
-  gem 'faker', "~> 1.1.2"
   gem 'capybara', "~> 2.1.0"
   gem 'database_cleaner', "~> 1.0.1"
   gem 'launchy', "~> 2.3.0"
