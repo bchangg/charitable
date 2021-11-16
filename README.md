@@ -1,6 +1,4 @@
-[![Build Status](https://app.travis-ci.com/bchangg/rails_blog.svg?branch=main)](https://app.travis-ci.com/bchangg/rails_blog)
-
-![RSpec](https://github.com/bchangg/rails_blog/actions/workflows/rails_ci.yml/badge.svg)
+![Build Status ](https://github.com/bchangg/rails_blog/actions/workflows/rails_ci.yml/badge.svg)
 
 # README
 
