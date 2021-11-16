@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: coaching_rails_blog_development
+  database: charitable_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: coaching_rails_blog
+  #username: charitable
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: coaching_rails_blog_test
+  database: charitable_test
   # username: <%= ENV.fetch("PGUSER") { 'postgres' } %>
   # password: <%= ENV.fetch("PGPASSWORD") { 'postgres' } %>
   # port: <%= ENV.fetch("PGPORT") { 5432 } %>
@@ -83,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: coaching_rails_blog_production
-  username: coaching_rails_blog
-  password: <%= ENV['COACHING_RAILS_BLOG_DATABASE_PASSWORD'] %>
+  database: charitable_production
+  username: charitable
+  password: <%= ENV['CHARITABLE_DATABASE_PASSWORD'] %>
